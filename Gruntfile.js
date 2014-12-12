@@ -5,9 +5,7 @@ module.exports = function (grunt) {
         concat: {
             build: {
                 src: [
-                    "microplugin/src/microplugin.js",
-                    "sifter/sifter.js",
-                    "selectize/dist/js/selectize.js",
+                    "selectize/dist/js/standalone/selectize.js",
                     "js/define.js"
                 ],
                 dest: "selectize.js"
