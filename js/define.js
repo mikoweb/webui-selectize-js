@@ -1,7 +1,7 @@
 (function () {
     "use strict";
 
-    define("selectize", ['jquery'], function ($) {
+    /*define("selectize", ['jquery'], function ($) {
         return $.fn.selectize;
-    });
+    });*/
 }());
