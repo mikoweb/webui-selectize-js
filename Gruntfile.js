@@ -6,7 +6,7 @@ module.exports = function (grunt) {
             build: {
                 src: [
                     "vendor/selectize/dist/js/standalone/selectize.js",
-                    "js/define.js"
+                    "js/inject-css.js"
                 ],
                 dest: "selectize.js"
             }
