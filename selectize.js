@@ -3503,7 +3503,8 @@
 (function () {
     "use strict";
 
-    /*define("selectize", ['jquery'], function ($) {
-        return $.fn.selectize;
-    });*/
+    define("selectize-css", ['webui-cssloader'], function (loader) {
+        loader.inject('vendor/webui-selectize-js/selectize');
+        return null;
+    });
 }());
