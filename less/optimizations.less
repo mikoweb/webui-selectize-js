@@ -3,6 +3,11 @@
   font-size: 0;
 }
 
+// fix na uszkodzone rozwijanie wewnątrz .input-group
+.form-control.selectized {
+  position: static !important;
+}
+
 // brak zaokrąglonych narożników z lewej, bądź z prawej w .input-group
 .input-group {
   > select:first-child + .selectize-control .selectize-input {
