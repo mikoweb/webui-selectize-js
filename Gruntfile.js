@@ -5,7 +5,7 @@ module.exports = function (grunt) {
         concat: {
             build: {
                 src: [
-                    "selectize/dist/js/standalone/selectize.js",
+                    "vendor/selectize/dist/js/standalone/selectize.js",
                     "js/define.js"
                 ],
                 dest: "selectize.js"
@@ -16,12 +16,23 @@ module.exports = function (grunt) {
                 src: "selectize.js",
                 dest: "selectize.min.js"
             }
+        },
+        less: {
+            build: {
+                options: {
+                    compress: true,
+                    yuicompress: true,
+                    optimization: 2
+                },
+                files: {"selectize.css": "less/build.less"}
+            }
         }
     });
 
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-less');
 
     // Default task.
-    grunt.registerTask('default', ['concat', 'uglify']);
+    grunt.registerTask('default', ['concat', 'uglify', 'less']);
 };
