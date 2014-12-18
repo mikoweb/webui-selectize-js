@@ -16,8 +16,6 @@
     "license": "Apache License, Version 2.0",
     "ignore": [
         "node_modules",
-        "vendor/vsymfo-bootstrap-less",
-        "js",
-        "less"
+        "vendor/vsymfo-bootstrap-less"
     ]
 }
